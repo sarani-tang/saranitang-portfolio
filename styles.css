@@ -8,10 +8,18 @@
 body {
     background: #ffffff;
     color: #1a1a1a;
+    font-weight: 300;
+    font-family: 'Inconsolata', monospace;
 }
 
 h1 {
     font-size: 3rem;
+    font-weight: 400;
+    font-family: 'Inconsolata', monospace;
+}
+
+h2 {
+    font-size: 1.5rem;
     font-weight: 400;
     font-family: 'Inconsolata', monospace;
 }
@@ -28,6 +36,8 @@ strong {
 
 .about {
     margin: 20px 0 20px;
+    border-radius: 0.5rem;
+    background: #F2F2F2;
 }
 
 .hobbies {
@@ -38,4 +48,41 @@ strong {
     margin: 20px 0 20px;
     padding-bottom: 30px;
     border-bottom: 0.5px solid #656565;
+}
+
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.2rem;
+    justify-content: center;
+}
+
+.bubble {
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    padding: 1rem 1rem;
+    width: fit-content;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+    cursor: default;
+}
+
+.bubble:hover {
+    transform: translateY(-6px);
+    border-color: lightpink;
+    box-shadow: 0 8px 24px rgba(245, 161, 161, 0.8);
+}
+
+.bubble i {
+    font-size: 1.5rem;
+}
+
+.bubble span {
+    color: #696969;
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: 'Inconsolata', monospace;
 }
